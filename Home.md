@@ -4,8 +4,8 @@ Welcome to the oresat-structure wiki! This is the go-to guide for contributing t
 
 1. Clone the repository to your system<be>
 
-> `git clone https://github.com/oresat/oresat-structure.git`
-> 
+`git clone https://github.com/oresat/oresat-structure.git`
+
 > **NOTE:** The repository is around 9GB in size. If you would not like to download the entire repository history, use the following command instead<be>
 > 
 > `git clone --depth 1 https://github.com/oresat/oresat-structure.git`
