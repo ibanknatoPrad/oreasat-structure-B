@@ -1,5 +1,22 @@
 Welcome to the oresat-structure wiki!
 
+## Downloading the Repository
+
+1. Clone the repository to your system
+`git clone https://github.com/oresat/oresat-structure.git`
+
+> *NOTE:* The repository is around 9GB in size. If you would not like to download the entire repository history, use the following command instead
+> `git clone --depth 1 https://github.com/oresat/oresat-structure.git`
+> * The --depth 1 flag indicates that only the most recent commit will be cloned
+> 
+> To also clone all branches, use the following command
+> `git clone --depth 1 --no-single-branch https://github.com/oresat/oresat-structure.git`
+> * the --no-single-branch flag indicates that all branches should be cloned (since --depth automatically runs --single-branch)
+
+2. Download Solidworks
+
+3. Open up the files to get started!
+
 ## Repo Structure
 - OreSat.SLDASM  
 _The complete assembly of OreSat_
