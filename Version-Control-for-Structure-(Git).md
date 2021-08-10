@@ -1,48 +1,42 @@
-## Repo Structure
-- OreSat.SLDASM  
-_The complete assembly of OreSat_
-- AssemblyJig
-_What we use to hold OreSat on tables/for display_
-- Backplane  
-_The hub which provides power and data to all the boards_
-- BatteryCard 
-_The assembly that holds the batteries to the card; includes inhibit switches_
-- Cameras
-_Parts/subassemblies for the cameras_
-- COTS  
-_Any Commercial-Off-The-Shelf parts -- screws, connectors, et cetera._
-- DebugConnector  
-_The connector that allows for easy debugging of the satellite_
-- Endcap  
-_The boards that are placed on the +Z and -Z ends of the satellite_
-- Endcards  
-_The cards placed next to the Endcaps; hold the deployable antennas_
-- Frames
-_The +X and -X Frames, as well as the Y frames; wedges and triangles_
-- GenericCard  
-_Parts/subassemblies for the generic card; other cards for OreSat_
-- LICENSE 
-_CERN OHL licensing_
-- ReactionWheels
-_The wheels that are located in the center of OreSat and help it spin while in orbit_
-- Solar  
-_Solar panel boards
-- VibrationJig  
-_The fixtures that hold OreSat on the vibration table during testing_
-- VolumeKeepout  
-_Solids for quickly checking if we conform to the CDS, by checking for interferences_
+# Using Git Bash for the SolidWorks
+# You will need to download Git Bash. If you have Windows, Google "Git for Windows"
 
+## first time setup
+- go to the repo you wish to clone and click "clone or download" then RIGHT CLICK to copy the link (it will NOT work with ctrl+c)
+- type `git clone` = RIGHT CLICK to paste the link, then press enter to copy the repo
+- type `cd oresat-structure` = this puts you in the structure repo
+- type `git checkout -b typeyourbranchnamehere` = then press enter, This creates a branch like “dev_joe” and switches you to that branch. This branch is a complete clone of master. MAKE SURE YOU DO YOUR WORK IN THIS BRANCH
+  
+## When you're ready to do work in SolidWorks, make sure your branch is up to date with master. 
+- First, navigate to the oresat-structure repo. For me, this command looks like `cd Documents/oresat-structure` but it will look different based on where you put your repo.
+- Type `git checkout master` = This puts you on the master branch.
+- Type `git pull` = This pulls the latest version of the master branch.
+- Type `git checkout insertyourbranchnamehere` = This switches back to your personal branch. For me, this looks like `git checkout dev_emilio`
+- Type `git merge master` = This merges master back in to your branch, updating your branch to the latest version of the master branch.
+- Type `git push` = This pushes these new changes to your branch.
+  
+## Now go make things, do work in SolidWorks, etc. You can do this through your file explorer. The repo is placed in the C drive under your username. I recommend pinning this repo to quick start so you can find it easily.
 
-## Terminology
-These are just some terms that are relevant to the structure, non-obvious to an MME, or non-standard.  
-- The X and Z axes are aligned to the features described below, and the Y axis is oriented to obey the right hand rule. The axes of the top-level assembly follow this convention. This convention matches that of our launch provider.
-- A _board_ is any printed circuit board (PCB).
-- A _card_ a board that slides into the rack structure of the satellite.
-- An _endcap_ is a board that is screwed onto one of the +/-Z faces.
-- An _endcard_ is a card that slides in under the +Z EndCap or above the -Z EndCap.
-- _Rack_ and _structure_ both refer to the assembly of aluminum _frames_ to which all the boards mount.
-- The _sides_ are the +/-Y components of the rack. They have the slots that the cards slide into.
-- The _-X side_ is the location of the backplane, while the _+X side_ is placed on last, acting somewhat like a lid
-- The _backplane_ is the long board that sits on the -X face of the satellite. It transfers power, data, and RF between the boards.
-- The _turnstile_ antenna is the four-pronged antenna on the -Z face of the satellite. It provides an omnidirectional, low-data-rate signal to the ground.
-- The _helical_ or _high gain_ antenna is the spiral, single-pronged antenna on the +Z face of the satellite. It's the narrow-beam, high-data-rate antenna the satellite uses for transmitting video.
+## Once you’re ready to check in
+- Fully save everything in solidworks - please do shutdown SolidWorks.
+- `git status`=  Shows what’s new, modified, etc. You’ll have red (modified and untracked), and changes ready to to commit are green.
+- `git add filename1 filename2` = add file to commit
+    - `git add .` =  Only if you want to add all the changes in the directory
+- `git status` =  Everything should be green now, except for the files you don’t want to commit.
+- `git commit -m “commit message”` = This commit message should briefly describe the work you've done. Something like `git commit -m "Updated card slots"`
+- `git status` =  Now it should say you’re ahead of master by one commit
+- `git push` =  When you’re ready, do a git push, which saves your branch to the server.
+
+## Once you’re ready to merge with master
+- `git checkout master` = swap to master branch
+- `git pull` = update master.
+- `git checkout insertyourbranchnamehere` = swap back to your branch
+- `git merge master` =  This merges master back in your branch. If you experience any problems here, reach out for help.
+- `git push` = This saves these changes to your remote branch.
+- Now re-open everything in solidworks, make sure there’s nothing broken.
+
+## Once you're done with the updates
+- email to Emilio at egizzi@pdx.edu or Hayden at reinhold@pdx.edu so he can update the master assembly. DO NOT update master unless you have permission to do so!
+
+## If something went wrong
+-notify Emilio, Hayden, Ryan, and/or Andrew so they can help. 
