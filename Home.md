@@ -1,4 +1,4 @@
-Welcome to the oresat-structure wiki!
+Welcome to the oresat-structure wiki! This is the go-to guide for contributing to the OreSat project.
 
 ## Downloading the Repository
 
