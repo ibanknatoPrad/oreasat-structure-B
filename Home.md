@@ -30,6 +30,6 @@ The contribution instructions for OreSat all are written for use in the Git Bash
 
 Currently, contributed to the projects operate in their own branches, labeled "dev_[Insert First Name]". For example, a branch for Marvin would be labeled "dev_marvin". However, before you can contribute, you must join the GitHub Organization
 
-To join, please message Joe or Andrew on Slack to get added! To learn how to join the OreSat Project, check out (our website)[https://www.oresat.org)!
+To join, please message Joe or Andrew on Slack to get added! To learn how to join the OreSat Project, check out (our website)[https://www.oresat.org]!
 
 After you have joined, go to "Version Control For Structure (Git)" to learn how to create a branch, add to the project, and update your files!
