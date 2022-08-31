@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 Welcome to the oresat-structure wiki! This is the go-to guide for contributing to the OreSat project. Everything you may need to download the repository and contribute can be found here! Below you can find the necessary info to get started!
 
